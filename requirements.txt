@@ -7,6 +7,8 @@
 python-dotenv
 openai
 chromadb
+jupyter
+python-magic-bin
 
 # =============================================================================
 # Docling (docling_document_parsing.ipynb)
@@ -28,6 +30,10 @@ langchain-docling
 unstructured==0.18.15
 langchain-unstructured
 unstructured-inference
+unstructured[pdf,docx,xlsx,pptx,html,md,image,email,pdf-infer]
+langchain-text-splitters
+langchain-classic
+pytesseract
 # Unstructured extras for file format support:
 # Install with: pip install "unstructured[pdf,docx,xlsx,pptx,html,md,image,email]"
 # Or install all: pip install "unstructured[all-docs]"
@@ -84,3 +90,5 @@ vectorize-client
 # =============================================================================
 # pip install "unstructured[local-inference]"
 # Note: Requires system Tesseract installation for OCR
+
+
